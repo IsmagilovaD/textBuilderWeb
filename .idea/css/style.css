@@ -74,19 +74,28 @@ body{
     font-weight: normal;
     line-height: 1.2;
     color: #000000;
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    overflow-y: scroll;
 }
 
 .wrapper{
     max-width: 1060px;
     margin: 0 auto;
 }
-.toolbar{
+#toolbar{
     position: absolute;
     margin-left: 160px;
     margin-bottom: 1000px;
     margin-right: 160px;
+    width: 1600px;
+    height: 80px;
+    left: 160px;
+    top: 0px;
+    align-content: center;
 }
-#container{
+#container1{
     position: absolute;
     width: 327.34px;
     height: 80px;
@@ -102,4 +111,28 @@ body{
     font-size: 30px;
     line-height: 35,16px;
 
+}
+#accountCircle{
+    margin-left: 500px;
+}
+#container2{
+    width: 212.11px;
+    height: 40px;
+    right: 968.67px;
+    top: 16px;
+    display: flex;
+    align-content: center;
+}
+#userName{
+    font-family:sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 23,44px;
+}
+#linkes{
+    margin-left: 1669,24px;
+}
+
+#osnova{
+    margin-top: 80px;
 }
