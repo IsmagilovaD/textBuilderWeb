@@ -69,6 +69,9 @@ body{
     width: 100%;
     height: 80px;
     background-color: white;
+    border-bottom: rgba(0,0,0,0.25);
+    border-bottom-style:solid ;
+    border-bottom-width: 1px;
 }
 #toolbar{
     position: fixed;
@@ -81,7 +84,7 @@ body{
     position: absolute;
     width: 327.34px;
     height: 80px;
-    align-content: center;
+    text-align: center;
 }
 .flex {
     display: flex;
@@ -94,13 +97,9 @@ body{
     padding: 20px;
 }
 #accountCircle{
-    margin-left: 500px;
 }
 #container2{
-    width: 212.11px;
-    height: 40px;
-    right: 968.67px;
-    top: 16px;
+    margin-left: 320px;
     align-content: center;
 }
 #userName{
@@ -108,21 +107,110 @@ body{
     font-style: normal;
     font-size: 20px;
     line-height: 23,44px;
+
 }
 #linkes{
-    margin-left: 1669,24px;
+    top:18px;
+    position: fixed;
+    right: 160px;
 }
 #osnova{
     max-width: 1060px;
+    height: 100%;
     margin-top: 80px;
     margin-left:160px;
     margin-right: 160px;
-    height: 100%;
     background-color: white;
 }
 #button{
-    margin-top: 316px;
-    margin-left: 202px ;
-    color: #48B9F6;
-    border-radius:  10px;
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 40px;
+}
+.floating-button {
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: white;
+    box-shadow: 0 8px 15px #48B9F6;
+    transition: .3s;
+}
+.floating-button:hover {
+    font-family:sans-serif ;
+    background: #48B9F6;
+    box-shadow: 0 15px 20px rgba(72, 185, 246, .4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+#source{
+    position: fixed;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 434px;
+    height: 185px;
+}
+ul.settings{
+    margin-top: 70px;
+}
+ul.settings li{
+    margin-bottom: 15px;
+}
+#rightBlock{
+    margin-left: 312px;
+    border-left: rgba(0,0,0,0.25);
+    border-left-style:solid ;
+    border-left-width: 1px;
+}
+#top{
+    position: fixed;
+    width: 716px;
+    height: 80px;
+    border-bottom: rgba(0,0,0,0.25);
+    border-bottom-style:solid ;
+    border-bottom-width: 1px;
+    background-color: white;
+}
+ul.hr {
+    margin: 0;
+    padding-top: 30px;
+}
+ul.hr li {
+    display: inline;
+    margin-right: 5px;
+    padding: 30px;
+}
+
+#jokesHolder{
+    margin-top: 50px;
+}
+ul.jokesHolder{
+    margin: 0;
+    padding-top: 30px;
+}
+ul.jokesHolder li{
+    margin-right: 5px;
+    padding: 30px;
+}
+.jokes{
+    width: 500px; height: 50px;
+    background: white;
+    border: 3px solid rgba(0,0,0,0.25);
+    border-radius: 10px;
+    padding: 15px;
+}
+.jokes:hover{
+    border: 2px solid #48B9F6;
 }
