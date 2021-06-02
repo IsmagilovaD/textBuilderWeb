@@ -9,13 +9,10 @@
 </head>
 <body>
 <div id="header">
-    <div id="toolbar" class="flex">
-        <div id="container1" class="flex">
             <div id="textBuilder">
-                Text Builder
+                <p>Text Builder</p>
             </div>
-        </div>
-        <div id="container2" class="flex">
+        <div id="container2" >
             <img src="img/account_circle.png">
             <p>
                 Имя пользователя
@@ -25,9 +22,9 @@
             <a><img src="img/help.png"></a>
             <a><img src="img/favorite.png"></a>
         </div>
-    </div>
 </div>
 <div id="osnova" class="flex">
+    <div id="leftBlock" class="flex">
     <div id="source" class="flex">
         <ul class="settings" >
             <il> <p style="text-align: left"> Источник:</p>
@@ -50,15 +47,22 @@
         </ul>
     </div>
     <div id="button"><a href="" class="floating-button">Сгенерировать!</a> </div>
-    <div id="rightBlock" class="flex">
-        <div id="top">
-            <ul class="hr">
-                <li>Готовые исходники</li>
-                <li>Втавка из буфера обмена</li>
-                <li>Ссылка на группу BK</li>
-            </ul>
-        </div>
+    </div>
+    <div id="top">
+        <ul class="hr">
+            <li class="left">
+                <div class="content">Готовые Исходники</div>
+            </li>
+            <li class="right">
+                <div class="content">Ссылка на группу ВК</div>
+            </li>
+            <li class="center">
+                <div class="content">Втавка из буфера обмена</div>
+            </li>
 
+        </ul>
+    </div>
+    <div id="rightBlock" class="flex">
         <div id="jokesHolder">
             <ul class="jokesHolder">
                 <li><p class="jokes"> Смешной бугурт 1</p></li>

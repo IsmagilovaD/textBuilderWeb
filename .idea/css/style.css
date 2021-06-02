@@ -51,7 +51,7 @@ html{
 }
 body{
     font-family:sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: normal;
     line-height: 1.2;
@@ -64,33 +64,22 @@ body{
 }
 #header{
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
     background-color: white;
-    border-bottom: rgba(0,0,0,0.25);
-    border-bottom-style:solid ;
-    border-bottom-width: 1px;
-}
-#toolbar{
-    position: fixed;
-    margin-left: 160px;
-    margin-right: 160px;
-    height: 80px;
-    align-content: center;
-}
-#container1{
-    position: absolute;
-    width: 327.34px;
-    height: 80px;
-    text-align: center;
+    border-bottom:1px solid rgba(0,0,0,0.25);
+    z-index: 2;
 }
 .flex {
     display: flex;
     flex-wrap: wrap;
 }
 #textBuilder{
+    margin-left: 160px;
+    width: fit-content;
     font-family:sans-serif;
     font-style: normal;
     font-size: 30px;
@@ -99,8 +88,9 @@ body{
 #accountCircle{
 }
 #container2{
-    margin-left: 320px;
-    align-content: center;
+    width: fit-content;
+    position: relative;
+    margin-left: 130px;
 }
 #userName{
     font-family:sans-serif;
@@ -115,12 +105,20 @@ body{
     right: 160px;
 }
 #osnova{
-    max-width: 1060px;
-    height: 100%;
+    height: fit-content;
     margin-top: 80px;
     margin-left:160px;
     margin-right: 160px;
     background-color: white;
+    box-shadow: 0 15px 20px #48B9F6;
+}
+#leftBlock{
+    position: fixed;
+    left: 160px;
+    align-content: center;
+    width: 312px;
+    top: 80px;
+    bottom: 0;
 }
 #button{
     position: fixed;
@@ -128,7 +126,6 @@ body{
     margin-left: 40px;
 }
 .floating-button {
-    font-family: sans-serif;
     text-decoration: none;
     display: inline-block;
     width: 170px;
@@ -136,21 +133,21 @@ body{
     line-height: 45px;
     border-radius: 45px;
     margin: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
     font-weight: 600;
-    color: #524f4e;
-    background: white;
+    color: white;
+    background:#48B9F6;
     box-shadow: 0 8px 15px #48B9F6;
     transition: .3s;
 }
 .floating-button:hover {
     font-family:sans-serif ;
-    background: #48B9F6;
-    box-shadow: 0 15px 20px rgba(72, 185, 246, .4);
+    background: rgba(72, 185, 246, .4);
+    box-shadow: 0 15px 20px #48B9F6;
     color: white;
     transform: translateY(-7px);
 }
@@ -159,8 +156,6 @@ body{
     position: fixed;
     margin-left: 40px;
     margin-top: 30px;
-    width: 434px;
-    height: 185px;
 }
 ul.settings{
     margin-top: 70px;
@@ -168,33 +163,51 @@ ul.settings{
 ul.settings li{
     margin-bottom: 15px;
 }
-#rightBlock{
-    margin-left: 312px;
-    border-left: rgba(0,0,0,0.25);
-    border-left-style:solid ;
-    border-left-width: 1px;
-}
 #top{
+    z-index: 2;
     position: fixed;
-    width: 716px;
+    right: 160px;
+    left: 472px;
     height: 80px;
-    border-bottom: rgba(0,0,0,0.25);
-    border-bottom-style:solid ;
-    border-bottom-width: 1px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    border-left: 1px solid rgba(0,0,0,0.25);
     background-color: white;
 }
+#rightBlock{
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-left: 312px;
+    margin-top: 80px;
+    border-left: 1px solid rgba(0,0,0,0.25);
+}
+
 ul.hr {
-    margin: 0;
+    width: 100%;
     padding-top: 30px;
 }
-ul.hr li {
-    display: inline;
-    margin-right: 5px;
-    padding: 30px;
+.content{
+    display: inline-block;
+}
+ul.hr li.left {
+    padding-left: 5%;
+    width: 30%;
+    float: left;
+}
+ul.hr li.right {
+    width: 30%;
+    float: right;
+    text-align: right;
+    padding-right: 5%;
+}
+ul.hr li.center {
+    text-align: center;
 }
 
 #jokesHolder{
-    margin-top: 50px;
+    position: relative;
+    width: 100%;
 }
 ul.jokesHolder{
     margin: 0;
@@ -205,7 +218,7 @@ ul.jokesHolder li{
     padding: 30px;
 }
 .jokes{
-    width: 500px; height: 50px;
+    width: 70%; height: 30%;
     background: white;
     border: 3px solid rgba(0,0,0,0.25);
     border-radius: 10px;
